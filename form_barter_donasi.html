@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Barter & Donasi - Platform Buku Kurikulum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Utama Sistem -->
+    <header>
+        <h1>Platform Barter & Donasi Buku Paket Kurikulum Sekolah Resmi</h1>
+        <p>Solusi Akses Buku Paket & LKS Gratis melalui Barter Lokal dan Donasi ke Sekolah Pelosok (3T)</p>
+    </header>
+
+    <!-- Navigasi Utama -->
+    <nav>
+        <a href="index.html">Beranda</a> | 
+        <a href="form_barter_donasi.html">Form Barter & Donasi</a> | 
+        <a href="dashboard.html">Dashboard & Katalog Buku</a>
+    </nav>
+
+    <hr>
+
+    <!-- Konten Utama (Form Pengajuan) -->
+    <main>
+        <section>
+            <h2>Formulir Pengajuan Barter / Donasi Buku Paket</h2>
+            <p>Silakan isi detail buku kurikulum resmi yang ingin Anda tukarkan atau donasikan[cite: 2].</p>
+
+            <form action="dashboard.html" method="post" enctype="multipart/form-data">
+                
+                <!-- Pengelompokan Data Pengguna & Lokasi -->
+                <fieldset>
+                    <legend><strong>Data Pengguna & Lokasi (RT/RW)</strong></legend>
+                    <p>
+                        <label for="nama_pengguna">Nama Lengkap Pengguna / Donatur:</label><br>
+                        <input type="text" id="nama_pengguna" name="nama_pengguna" placeholder="Masukkan nama lengkap Anda" required size="40">
+                    </p>
+                    <p>
+                        <label for="no_telepon">Nomor WhatsApp / Telepon:</label><br>
+                        <input type="tel" id="no_telepon" name="no_telepon" placeholder="081234567890" pattern="[0-9]{10,13}" title="Masukkan 10 hingga 13 digit angka" required>
+                    </p>
+                    <p>
+                        <label for="lokasi_kelurahan">Lokasi Kelurahan / Desa:</label><br>
+                        <input type="text" id="lokasi_kelurahan" name="lokasi_kelurahan" placeholder="Contoh: Kelurahan Sidanegara (RT 02/RW 05)" required size="40">
+                    </p>
+                    <p>
+                        <label for="jenis_transaksi">Opsi Layanan:</label><br>
+                        <select id="jenis_transaksi" name="jenis_transaksi" required>
+                            <option value="">-- Pilih Jenis Transaksi --</option>
+                            <option value="Barter Lokal">Barter Lokal (Tukar Langsung Terdekat/COD)</option>
+                            <option value="Donasi 3T">Donasi ke Sekolah Pelosok / Daerah 3T</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- Pengelompokan Detail Buku Paket Kurikulum -->
+                <fieldset>
+                    <legend><strong>Spesifikasi Buku Paket Kurikulum Resmi</strong></legend>
+                    <p>
+                        <label for="judul_buku">Judul Buku / LKS:</label><br>
+                        <input type="text" id="judul_buku" name="judul_buku" placeholder="Contoh: Buku Matematika Kurikulum Merdeka" required size="40">
+                    </p>
+                    <p>
+                        <label for="jenjang">Jenjang Pendidikan:</label><br>
+                        <select id="jenjang" name="jenjang" required>
+                            <option value="">-- Pilih Jenjang --</option>
+                            <option value="SD">SD / MI</option>
+                            <option value="SMP">SMP / MTs</option>
+                            <option value="SMA">SMA / SMK / MA</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="kelas">Kelas:</label><br>
+                        <input type="number" id="kelas" name="kelas" min="1" max="12" placeholder="Contoh: 7" required>
+                    </p>
+                    <p>
+                        <label for="mapel">Mata Pelajaran:</label><br>
+                        <input type="text" id="mapel" name="mapel" placeholder="Contoh: Bahasa Indonesia" required size="30">
+                    </p>
+                    <p>
+                        <label for="jumlah">Jumlah Eksemplar:</label><br>
+                        <input type="number" id="jumlah" name="jumlah" min="1" max="50" value="1" required>
+                    </p>
+                    <p>
+                        <label for="foto_buku">Unggah Foto Fisik Buku (Halaman Depan & Kondisi):</label><br>
+                        <input type="file" id="foto_buku" name="foto_buku" accept="image/*" required>
+                    </p>
+                    <p>
+                        <label for="kondisi">Catatan Kondisi & Deskripsi Buku:</label><br>
+                        <textarea id="kondisi" name="kondisi" rows="4" cols="50" placeholder="Jelaskan kondisi fisik buku (contoh: 85% layak, tidak ada coratan parah, terbitan Kemendikbud)..."></textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <p>
+                    <button type="submit">Ajukan Buku</button>
+                    <button type="reset">Reset Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Catatan Kaki (Footer) -->
+    <footer>
+        <p>&copy; 2026 Kelompok 3 (TRPL 2A) - Platform Barter & Donasi Buku Paket Kurikulum Sekolah Resmi. Politeknik Negeri Cilacap[cite: 2].</p>
+    </footer>
+</body>
+</html>
