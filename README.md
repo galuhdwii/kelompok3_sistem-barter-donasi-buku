@@ -15,6 +15,3 @@ Sementara itu, masih banyak sekolah dan murid di wilayah pelosok (3T) yang kekur
 **Hadirnya platform ini bertujuan untuk:**
 1. **Saling Bantu Antar-Tetangga (Barter Lokal):** Orang tua bisa saling menukarkan buku pelajaran bekas anak secara gratis di lingkungan RT/RW/Kelurahan terdekat tanpa biaya kirim.
 2. **Peduli Pendidikan Pelosok (Donasi 3T):** Membuka jalan bagi siapa saja yang ingin mendonasikan buku layak pakai ke sekolah-sekolah yang benar-benar membutuhkan.
-
-
-
